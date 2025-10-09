@@ -4,7 +4,7 @@ import { validateLoginData } from "../utils/validate";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useAppDispatch } from "../store/hooks";
-import { addUser } from "../utils/userSlice";
+import { addUser } from "../store/userSlice";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
